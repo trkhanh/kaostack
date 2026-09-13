@@ -1,4 +1,6 @@
 ---
+aliases:
+  - show-me-your-work
 tags:
   - SKILL
 created: 2026-09-13T16:30:00

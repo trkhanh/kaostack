@@ -1,4 +1,6 @@
 ---
+aliases:
+  - automate-me
 tags:
   - SKILL
 created: 2026-09-13T16:06:00

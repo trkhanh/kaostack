@@ -1,4 +1,6 @@
 ---
+aliases:
+  - arena
 tags:
   - SKILL
 name: arena

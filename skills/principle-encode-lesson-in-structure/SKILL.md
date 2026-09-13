@@ -1,4 +1,6 @@
 ---
+aliases:
+  - principle-encode-lessons-in-structure
 tags:
   - SKILL
   - SystemThinking

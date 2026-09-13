@@ -1,8 +1,19 @@
+---
+tags:
+created: 2026-09-13T17:02:00
+name: bugbot-triage
+description: Reference for the Babysit playbook on classifying Bugbot/review-automation comments as fix, dismiss, or ask, plus a growing library of learned skip patterns and their risk boundaries
+disable-model-invocation: true
+status: draft
+publish: false
+version: 0.0.1
+---
 # Bugbot triage
 
-Use this reference when the Babysit playbook (`../playbooks/babysit.md`) handles Bugbot or review-automation comments. The goal is not to ignore Bugbot by default. The goal is to stop treating every comment as a required code change.
+Use this reference when the Babysit playbook [[babysit]] handles Bugbot or review-automation comments. The goal is not to ignore Bugbot by default. The goal is to stop treating every comment as a required code change.
 
 ## Decision rubric
+
 
 Classify each Bugbot thread before acting:
 

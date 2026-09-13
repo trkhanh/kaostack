@@ -1,4 +1,6 @@
 ---
+aliases:
+  - how
 tags:
   - SKILL
 created: 2026-09-12T14:52:00

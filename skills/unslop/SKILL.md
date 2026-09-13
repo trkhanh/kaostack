@@ -1,4 +1,6 @@
 ---
+aliases:
+  - unslop
 tags:
   - SKILL
 created: 2026-09-13T16:34:00

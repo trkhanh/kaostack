@@ -1,4 +1,6 @@
 ---
+aliases:
+  - principle-separate-before-serializing-shared-state
 tags:
   - SKILL
 name: principle-separate-before-serializing-shared-state

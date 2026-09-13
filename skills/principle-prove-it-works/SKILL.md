@@ -1,4 +1,6 @@
 ---
+aliases:
+  - principle-prove-it-works
 tags:
   - SKILL
 created:
