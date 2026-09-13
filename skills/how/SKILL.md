@@ -6,7 +6,7 @@ tags:
 created: 2026-09-12T14:52:00
 name: how
 description:
-  - Use for "how does X work", code walkthroughs before changing something, and placement / ownership / layering questions ("where should this live", "which package owns this", "is this the right layer"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.
+  - Use for "how does X work", code walkthroughs before changing something, and placement / ownership / layering questions ("where should this live", "which package owns this", "is this the right layer"). Explains subsystem architecture, runtime flow, onboarding mental models. Use [[_ai/_skill/kaostack/skills/why/SKILL|why]] for motivation.
 disable-model-invocation: true
 status: ✅ done
 ---
@@ -18,8 +18,8 @@ Explore the codebase to answer "how does X work?" questions. Produce architectur
 
 If the scope is ambiguous, state your interpretation and explore. The user can redirect.
 
-- **Simple** (a single module, a small utility, a narrow question such as "how does function X work"): no explorers. One explainer explores and explains in a single pass. Go to Step 2b.
-- **Complex** (a subsystem spanning multiple files or services, a cross-cutting feature, a full architectural overview): spawn parallel explorers first, then hand off to the explainer. Go to Step 2a.
+- **Simple** (a single module, a small utility, a narrow question such as "how does function X work"): no explorers. One explainer explores and explains in a single pass. Go to Step 2b.
+- **Complex** (a subsystem spanning multiple files or services, a cross-cutting feature, a full architectural overview): spawn parallel explorers first, then hand off to the explainer. Go to Step 2a.
 
 When in doubt, take the simple path.
 
@@ -27,31 +27,31 @@ When in doubt, take the simple path.
 
 Decompose the question into 2 to 4 exploration angles, each a distinct slice of the subsystem. Spawn all explorers in a single message:
 
-- `subagent_type`: `generalPurpose`
-- `model`: your configured how-explorer model (default `grok-4.6-fast-xhigh`)
-- `readonly`: `true`
+- `subagent_type`: `generalPurpose`
+- `model`: your configured how-explorer model (default `grok-4.6-fast-xhigh`)
+- `readonly`: `true`
 
-Each explorer gets the prompt in `references/explorer-prompt.md` [[explorer-prompt]] with its angle filled in. Then go to Step 3.
+Each explorer gets the prompt in `references/explorer-prompt.md` [[explorer-prompt]] with its angle filled in. Then go to Step 3.
 
 ## Step 2b. Direct Explain (simple questions)
 
 Spawn one Task subagent that explores and explains in one pass:
 
-- `subagent_type`: `generalPurpose`
-- `model`: your configured how-explainer model (default `claude-fable-5-1-thinking-max`)
-- `readonly`: `true`
+- `subagent_type`: `generalPurpose`
+- `model`: your configured how-explainer model (default `claude-fable-5-1-thinking-max`)
+- `readonly`: `true`
 
-Build its prompt from `references/explainer-prompt.md` [[explainer-prompt]] without the explorer-findings section. Go to Step 4.
+Build its prompt from `references/explainer-prompt.md` [[explainer-prompt]] without the explorer-findings section. Go to Step 4.
 
 ## Step 3. Synthesize (complex questions only)
 
 Once all explorers have returned, spawn one Task subagent to synthesize their findings into one explanation:
 
-- `subagent_type`: `generalPurpose`
-- `model`: your configured how-explainer model (default `claude-fable-5-1-thinking-max`)
-- `readonly`: `true`
+- `subagent_type`: `generalPurpose`
+- `model`: your configured how-explainer model (default `claude-fable-5-1-thinking-max`)
+- `readonly`: `true`
 
-Build its prompt from `references/explainer-prompt.md` [[explainer-prompt]] with every explorer's findings filled in.
+Build its prompt from `references/explainer-prompt.md` [[explainer-prompt]] with every explorer's findings filled in.
 
 ## Step 4. Present
 
@@ -59,4 +59,4 @@ Present the explainer's output to the user. Light edits for clarity or context f
 
 ## Output Format
 
-The explanation uses the sections defined in `references/explainer-prompt.md` [[explainer-prompt]] , dropping any that do not apply: Overview, Key Concepts, How It Works, Where Things Live, Gotchas.
+The explanation uses the sections defined in `references/explainer-prompt.md` [[explainer-prompt]] , dropping any that do not apply: Overview, Key Concepts, How It Works, Where Things Live, Gotchas.

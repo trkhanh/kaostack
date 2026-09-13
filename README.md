@@ -17,14 +17,14 @@ Each skill directory has a `SKILL.md` with YAML frontmatter (`name`, `descriptio
 
 | Skill | Purpose |
 | --- | --- |
-| `poteto-mode` | Agent operating style: concise responses, deliberate subagent use, unslopped prose, simple code, verified work. Routes to the playbooks and principles below. |
-| `architect` | Sketch types, signatures, and module structure before writing code; stays in the loop while implementation fills in. |
-| `arena` | Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. |
-| `how` | Explain how a subsystem works: architecture, runtime flow, onboarding mental models. |
-| `why` | Explain why something works the way it does: design rationale, regressions, postmortems, cited from source control, issue trackers, chat, and observability tools. |
-| `automate-me` | Mines agent-transcript history plus direct questions to author a personalized "-mode" skill capturing a user's working conventions. |
-| `show-me-your-work` | Keeps a reviewable decision-trail log (TSV, one row per decision) for long-running or unattended work. |
-| `unslop` | Cuts AI writing tells from any prose surface. |
+| [[_ai/_skill/kaostack/skills/poteto-mode/SKILL|poteto-mode]] | Agent operating style: concise responses, deliberate subagent use, unslopped prose, simple code, verified work. Routes to the playbooks and principles below. |
+| [[_ai/_skill/kaostack/skills/architect/SKILL|architect]] | Sketch types, signatures, and module structure before writing code; stays in the loop while implementation fills in. |
+| [[_ai/_skill/kaostack/skills/arena/SKILL|arena]] | Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. |
+| [[_ai/_skill/kaostack/skills/how/SKILL|how]] | Explain how a subsystem works: architecture, runtime flow, onboarding mental models. |
+| [[_ai/_skill/kaostack/skills/why/SKILL|why]] | Explain why something works the way it does: design rationale, regressions, postmortems, cited from source control, issue trackers, chat, and observability tools. |
+| [[_ai/_skill/kaostack/skills/automate-me/SKILL|automate-me]] | Mines agent-transcript history plus direct questions to author a personalized "-mode" skill capturing a user's working conventions. |
+| [[_ai/_skill/kaostack/skills/show-me-your-work/SKILL|show-me-your-work]] | Keeps a reviewable decision-trail log (TSV, one row per decision) for long-running or unattended work. |
+| [[_ai/_skill/kaostack/skills/unslop/SKILL|unslop]] | Cuts AI writing tells from any prose surface. |
 | `principle-*` | Standalone principles (fix root causes, prove it works, redesign from first principles, separate before serializing shared state, encode lessons in structure) cited by name from `poteto-mode` and other skills. |
 
 ### poteto-mode

@@ -2,14 +2,14 @@
 aliases:
   - why
 name: why
-description: Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.
+description: Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use [[_ai/_skill/kaostack/skills/how/SKILL|how]] for runtime behavior.
 disable-model-invocation: true
 ---
 # Why
 
 Investigate the motivation and intent behind code.
 
-Companion to the `how` skill. `how` answers what the code does and how it works. `why` answers what forces led to its shape.
+Companion to the [[_ai/_skill/kaostack/skills/how/SKILL|`how`]] skill. [[_ai/_skill/kaostack/skills/how/SKILL|`how`]] answers what the code does and how it works. `why` answers what forces led to its shape.
 
 ## Operating Posture
 

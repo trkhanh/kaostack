@@ -10,7 +10,7 @@ disable-model-invocation: true
 
 When debugging, do not fix symptoms. Trace every problem to its root cause and fix it there.
 
-**Why:** Symptom fixes accumulate. Each workaround makes the system harder to reason about, and the real bug remains. Root-cause fixes are slower upfront but reduce total debugging time.
+**Why:** Symptom fixes accumulate. Each workaround makes the system harder to reason about, and the real bug remains. Root-cause fixes are slower upfront but reduce total debugging time.
 
 **Pattern:**
 

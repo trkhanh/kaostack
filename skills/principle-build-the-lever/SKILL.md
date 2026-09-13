@@ -24,6 +24,6 @@ When the work isn't trivial, build the tool that does it instead of doing it by 
 - Applying this principle produces a file. If you cited it and there is no codemod, script, generator, or delegate skill in the diff, you didn't apply it.
 - Commit the lever when the work outlives the session.
 
-**Balance:** The bar is triviality, not repetition. A one-off still earns a lever when the lever is what makes the work checkable. Per the [Laziness Protocol](../principle-laziness-protocol/SKILL.md), build the smallest script that does or proves the job, never a framework.
+**Balance:** The bar is triviality, not repetition. A one-off still earns a lever when the lever is what makes the work checkable. Per the [[_ai/_skill/kaostack/skills/principle-laziness-protocol/SKILL|Laziness Protocol]], build the smallest script that does or proves the job, never a framework.
 
-Distinct from [Encode Lessons in Structure](../principle-encode-lessons-in-structure/SKILL.md), which makes a recurring instruction a durable guardrail. This is throughput and reviewability on the work in front of you. For scripting the verification itself, see [Prove It Works](../principle-prove-it-works/SKILL.md).
+Distinct from [[_ai/_skill/kaostack/skills/principle-encode-lesson-in-structure/SKILL|Encode Lessons in Structure]], which makes a recurring instruction a durable guardrail. This is throughput and reviewability on the work in front of you. For scripting the verification itself, see [[_ai/_skill/kaostack/skills/principle-prove-it-works/SKILL|Prove It Works]].

@@ -53,16 +53,16 @@ Preserve every unrelated top-level setting and every other plugin entry. If `plu
 
 Reload the target project or start a fresh agent rooted there. Verify that these shared pstack skills resolve from project scope:
 
-- `how`
-- `why`
-- `tdd`
-- `unslop`
-- `principle-separate-before-serializing-shared-state`
-- `principle-minimize-reader-load`
-- `principle-guard-the-context-window`
-- `principle-sequence-verifiable-units`
-- `principle-fix-root-causes`
-- `principle-prove-it-works`
+- [[_ai/_skill/kaostack/skills/how/SKILL|how]]
+- [[_ai/_skill/kaostack/skills/why/SKILL|why]]
+- [[_ai/_skill/kaostack/skills/tdd/SKILL|tdd]]
+- [[_ai/_skill/kaostack/skills/unslop/SKILL|unslop]]
+- [[_ai/_skill/kaostack/skills/principle-separate-before-serializing-shared-state/SKILL|principle-separate-before-serializing-shared-state]]
+- [[_ai/_skill/kaostack/skills/principle-minimize-reader-load/SKILL|principle-minimize-reader-load]]
+- [[_ai/_skill/kaostack/skills/principle-guard-the-context-window/SKILL|principle-guard-the-context-window]]
+- [[_ai/_skill/kaostack/skills/principle-sequence-verifiable-units/SKILL|principle-sequence-verifiable-units]]
+- [[_ai/_skill/kaostack/skills/principle-fix-root-causes/SKILL|principle-fix-root-causes]]
+- [[_ai/_skill/kaostack/skills/principle-prove-it-works/SKILL|principle-prove-it-works]]
 
 Do not count a skill loaded from the current session or a user-scoped plugin. The check must show that a fresh agent in the target repository receives pstack through project settings.
 
@@ -119,7 +119,7 @@ Use only model slugs shown as available in the user's Cursor model picker or sup
 
 The source channel, triage identity, repository, tracker adapter, control skill, and feature map must be explicit. Fail setup if any required value stays ambiguous.
 
-Use pstack's `unslop` skill on the final automation names, descriptions, and prompt shims before saving them.
+Use pstack's [[_ai/_skill/kaostack/skills/unslop/SKILL|unslop]] skill on the final automation names, descriptions, and prompt shims before saving them.
 
 ## 4. Check integration capabilities
 
